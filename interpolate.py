@@ -134,7 +134,7 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument('-i', '--inputpath', help = 'Absolute path to file or directory with spatial data (in csv format) to be interpolated', required=True)
 parser.add_argument('-c', '--startcol', help = "Column number of which you wish to interporlate it and all columns to the right of it", required=True)
-parser.add_argument('-wd', '--workingdir', help = "Working directory for ArcPy, creates a \"temp\" and assumes an \"Output\" directory", required=True)
+parser.add_argument('-wd', '--workingdir', help = "Absolute path to working directory for ArcPy, creates a \"temp\" and assumes an \"Output\" and \"Input\" directory", required=True)
 
 args = parser.parse_args()
 
